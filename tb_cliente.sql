@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 16-Abr-2024 às 03:40
+-- Tempo de geração: 18-Abr-2024 às 03:32
 -- Versão do servidor: 8.0.27
 -- versão do PHP: 8.2.0
 
@@ -29,13 +29,22 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tb_cliente` (
   `cd_cliente` int NOT NULL,
-  `nm_cliente` varchar(45) COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `nm_endereco` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
-  `nr_endereco` int DEFAULT NULL,
-  `nr_cpf` char(11) COLLATE utf8mb4_general_ci NOT NULL,
-  `nr_cnpj` char(14) COLLATE utf8mb4_general_ci NOT NULL,
-  `nr_telefone` varchar(11) COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `nm_cliente` varchar(45) NOT NULL,
+  `nm_endereco` varchar(45) NOT NULL,
+  `nr_endereco` int NOT NULL,
+  `nr_cpf` char(11) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `nr_cnpj` char(14) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `nr_telefone` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Extraindo dados da tabela `tb_cliente`
+--
+
+INSERT INTO `tb_cliente` (`cd_cliente`, `nm_cliente`, `nm_endereco`, `nr_endereco`, `nr_cpf`, `nr_cnpj`, `nr_telefone`) VALUES
+(1, 'Gabriel', 'rua são lourenço  regina maria', 415, '2421323512', '', '13991001101'),
+(2, 'Gabriel', 'rua são lourenço  regina maria', 415, 'ewgge', '', '13991001101'),
+(3, 'Gabriel', 'rua são lourenço  regina maria', 415, 'ewgge', '', '13991001101');
 
 --
 -- Índices para tabelas despejadas
@@ -55,7 +64,7 @@ ALTER TABLE `tb_cliente`
 -- AUTO_INCREMENT de tabela `tb_cliente`
 --
 ALTER TABLE `tb_cliente`
-  MODIFY `cd_cliente` int NOT NULL AUTO_INCREMENT;
+  MODIFY `cd_cliente` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
