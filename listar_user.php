@@ -1,3 +1,5 @@
+</html>
+
 <?php
 include 'conexao.php';
 ?>
@@ -12,6 +14,34 @@ include 'conexao.php';
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-book"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="C_cliente.html">Cadastrar Cliente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="C_editora.html">Cadastrar Editora</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listar_cliente.php">Relatorio Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listar_editora.php">Relatorio Editoras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listar_user.php">Relatorio Usuarios</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 <div class="container">
     <h2>Lista de Usuários</h2>
 <table class="table">
