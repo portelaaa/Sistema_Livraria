@@ -1,1 +1,1 @@
-# aula-php feito por Gabriel de Oliveira e Melissa Portela
+# aula-php feito por Gabriel de Oliveira, Melissa Portela e Maria Eduarda 
