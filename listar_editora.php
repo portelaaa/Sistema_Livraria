@@ -12,6 +12,7 @@ include 'conexao.php';
     <title>Listagem de users</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -54,6 +55,7 @@ include 'conexao.php';
       <th scope="col">CNPJ</th>
       <th scope="col">Telefone</th>
       <th scope="col">Nome do Gerente</th>
+      <th scope="col">Ações</th>
     </tr>
   </thead>
   <tbody>
@@ -71,6 +73,8 @@ include 'conexao.php';
       <td><?php echo $result['nr_cnpj_editora']; ?></td>   
       <td><?php echo $result['nr_telefone_editora']; ?></td>   
       <td><?php echo $result['nm_gerente']; ?></td>   
+      <td> <a href=""><i class="fa-solid fa-user-pen"></i></a>
+      <a href=""><i class="fa-solid fa-trash"></i></td></a> 
     </tr>
 
     <?php } ?>

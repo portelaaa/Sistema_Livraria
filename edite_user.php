@@ -1,0 +1,95 @@
+<html>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <?php
+    include 'conexao.php';
+    $codigo = $_GET
+    ?>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-book"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="C_cliente.html">Cadastrar Cliente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="C_editora.html">Cadastrar Editora</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listar_cliente.php">Relatorio Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listar_editora.php">Relatorio Editoras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listar_user.php">Relatorio Usuarios</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            
+          </div>
+          <div class="col">
+            <form class="user" action="insert_user.php" method="post">
+            <div class="imagem">
+                <img src="books_library_study_icon_150963.png" alt="livros">
+            </div>
+            <form class= "user" action= "update_user.php" method= "post">
+                <div class="mb-3">
+                  <label class="form-label">Nome</label>
+                  <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Setor</label>
+                    <input type="text" class="form-control" name="setor" placeholder="Digite seu setor" >
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Digite seu email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="senha" placeholder="Digite sua senha">
+                  </div>
+                <div class="botao">
+                    <button type="submit" class="btn btn-outline-light" href="index.html" role="button">Cadastrar</button>
+                    <a class="btn btn-outline-light" href="index.html" role="button">Voltar</a>
+                </div>
+                 
+              </form>
+            </form>
+          </div>
+          <div class="col">
+          
+          </div>
+        </div>
+      </div>
+ 
+ 
+ 
+ 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+</body>
+</html>
