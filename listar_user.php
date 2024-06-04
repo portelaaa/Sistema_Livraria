@@ -67,8 +67,8 @@ include 'conexao.php';
       <td><?php echo $result['nm_user']; ?></td>
       <td><?php echo $result['nm_setor']; ?></td>
       <td><?php echo $result['login']; ?></td>
-      <td> <a href="edite_user.php?cod=<?php echo $result['id_user']?>"><i class="fa-solid fa-user-pen"></i></a>
-      <a href=""><i class="fa-solid fa-trash"></i></td></a> 
+      <td> <a href="edite_user.php?cod=<?php echo $result['id_user']; ?>"><i class="fa-solid fa-user-pen"></i></a>
+      <a href="deletar_user.php?cod=<?php echo $result['id_user']; ?>"><i class="fa-solid fa-trash"></i></td></a> 
     </tr>
 
     <?php } ?>
